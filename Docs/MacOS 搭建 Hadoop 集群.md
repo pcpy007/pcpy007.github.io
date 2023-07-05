@@ -16,11 +16,11 @@ CentOS Stream 9
 
 
 
-<img src="/Users/pcpy007/Library/Application Support/typora-user-images/image-20230705185144380.png" alt="image-20230705185144380" style="zoom:50%;" />
+<img src="https://github.com/pcpy007/pcpy007.github.io/blob/master/img/image-20230705185144380.png" alt="image-20230705185144380" style="zoom:50%;" />
 
 ## 1.2 操作系统对应 RHEL 9
 
-<img src="/Users/pcpy007/Library/Application Support/typora-user-images/image-20230705185035765.png" alt="image-20230705185035765" style="zoom:50%;" />
+<img src="https://github.com/pcpy007/pcpy007.github.io/blob/master/img/image-20230705185035765.png" alt="image-20230705185035765" style="zoom:50%;" />
 
 
 
@@ -249,10 +249,10 @@ sbin/start-yarn.sh
 
 hdfs 页面：[hadoop101](http://hadoop101:9870/)
 
-<img src="/Users/pcpy007/Library/Application Support/typora-user-images/image-20230705214600953.png" alt="image-20230705214600953" style="zoom:50%;" />
+<img src="https://github.com/pcpy007/pcpy007.github.io/blob/master/img/image-20230705214600953.png" alt="image-20230705214600953" style="zoom:50%;" />
 
 yarn 后台页面：http://hadoop102:8088/
 
-<img src="/Users/pcpy007/Library/Application Support/typora-user-images/image-20230705214846694.png" alt="image-20230705214846694" style="zoom:50%;" />
+<img src="https://github.com/pcpy007/pcpy007.github.io/blob/master/img/image-20230705214846694.png" alt="image-20230705214846694" style="zoom:50%;" />
 
 至此，初步可见集群搭建完成。
