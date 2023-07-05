@@ -25,8 +25,8 @@ CentOS Stream 9
 
 
 ## 1.3 网络适配器选择桥接模式
+<img src="https://github.com/pcpy007/pcpy007.github.io/blob/master/img/image-20230705184803664.png" alt="image-2023070518503664" style="zoom:50%;" />
 
-![image-20230705184803664](/Users/pcpy007/Library/Application Support/typora-user-images/image-20230705184803664.png)
 
 ## 1.4 设置 IP，关闭防火墙
 
