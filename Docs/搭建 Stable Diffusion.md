@@ -63,7 +63,7 @@ Expecting value: line 1 column 1 (char 0)
 
 打开 127.0.0.1:7861，输入咒语后点击生成，执行成功。
 
-![image-20230709123941054](/Users/pcpy007/Library/Application Support/typora-user-images/image-20230709123941054.png)
+![image-20230709123941054](https://github.com/pcpy007/pcpy007.github.io/blob/master/img/image-20230709123941054.png)
 
 # 6 ref
 

@@ -147,7 +147,7 @@ scp -r ./profile root@hadoop102:/root/
 
 三台机器组成的集群，其分工如下：
 
-![image-20230705213619124](/Users/pcpy007/Library/Application Support/typora-user-images/image-20230705213619124.png)
+![image-20230705213619124](https://github.com/pcpy007/pcpy007.github.io/blob/master/img/image-20230705213619124.png)
 
 ## 2.1 配置 hadoop-env.sh
 
