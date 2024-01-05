@@ -1,7 +1,7 @@
 {
   "name": "ForMyLove",
   "version": "0.1.0",
-  "description": "宝贝情人节快乐",
+  "description": "宝贝100天快乐",
   "main": "gulpfile.js",
   "author": "WangJohn",
   "license": "MIT",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wongjohn/for-my-love"
+    "url": "https://github.com/pcpy007/pcpy007.github.io"
   },
   "keywords": [
     "gulp",
