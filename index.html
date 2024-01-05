@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=100%, initial-scale=1">
-        <title>PS的女朋友主页</title>
-        <link href="https://cdn.jsdelivr.net/gh/gogobody/lover-optimizer@master/css/main.min.css" rel="stylesheet" type="text/css">
+        <title>与PS聊天中</title>
+        <link href="css/main.min.css" rel="stylesheet" type="text/css">
         <link rel="Shortcut Icon" href="favicon.ico"/>
-        <link rel="preload" href="https://cdn.jsdelivr.net/gh/gogobody/lover-optimizer@master/img/WechatIMG81.jpg" as="image">
+        <link rel="preload" href="img/WechatIMG81.jpg" as="image">
     </head>
     <body>
         <div id="mobile" :class="{ 'has-prompt': hasPrompt }">
@@ -33,7 +33,7 @@
             <div id="mobile-foot">
                 <div id="prompt">
                     <div id="prompt-head">
-                        <div class="say-something">爱你哟……</div>
+                        <div class="say-something">我想说……</div>
                         <a href="javascript:;" class="close-btn"
                             v-on:click="togglePrompt(false)"></a>
                     </div>
@@ -53,19 +53,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer">
-                    <div id="input-hint" class="f-input">
-                        <label class="i-label">
-                            <input type="text" v-model:value=" talkMsg " v-bind:placeholder="getPlaceHolder()">
-                        </label>
-                        <label class="s-label">
-                            <input type="button" value="发送" id="send" v-on:click="sendRobot()">
-                        </label>
-                        <label class="s-label">
-                            <input type="button" value="更多" v-on:click="togglePrompt(true)"
-                                   :class="{'clickable': !isTyping }">
-                        </label>
-                    </div>
+                <div id="input-hint" class="say-something"
+                    v-on:click="togglePrompt(true)"
+                    :class="{'clickable': !isTyping }">
+                    <span v-if="!isTyping">我想说……</span>
+                    <span v-if="isTyping">PS正在输入中</span>
                 </div>
             </div>
             <div id="prompt-bg" v-on:click="togglePrompt(false)"></div>
@@ -73,7 +65,7 @@
 
         <script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
         <script src="//cdn.bootcss.com/vue/2.2.6/vue.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/gogobody/lover-optimizer@master/js/index.js"></script>
-<!--        <script src="./js/index.js"></script>-->
+
+        <script src="js/index-min.js"></script>
     </body>
 </html>
