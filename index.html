@@ -14,7 +14,10 @@
 
     </head>
     <body>
-        <audio autoplay="true" loop="true"> <source src="music/audio1.mp3"></audio>
+        <audio autoplay="true" loop="true">
+            <source src="/music/audio1.mp3" type="audio/ogg">
+          </audio>
+        <audio autoplay="true" loop="true"> <source src="music/audio1.mp3" /></audio>
         <div id="mobile" :class="{ 'has-prompt': hasPrompt }">
             <div id="mobile-head">
                 <div id="mobile-head-title">与PS聊天中</div>
