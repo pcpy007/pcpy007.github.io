@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=100%, initial-scale=1">
         <title>与PS聊天中</title>
-        <embed src="music/audio1.mp3" autostart="true" loop="true" hidden="true"></embed>
         <link href="css/main.min.css" rel="stylesheet" type="text/css">
         <link rel="Shortcut Icon" href="favicon.ico"/>
         <link rel="preload" href="img/WechatIMG81.jpg" as="image">
@@ -15,6 +14,7 @@
 
     </head>
     <body>
+        <audio autoplay="true" loop="true"> <source src="music/audio1.mp3"></audio>
         <div id="mobile" :class="{ 'has-prompt': hasPrompt }">
             <div id="mobile-head">
                 <div id="mobile-head-title">与PS聊天中</div>
