@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loading...</title>
+  <script>
+    function checkInput() {
+      var userInput = document.getElementById("inputBox").value;
+      if (userInput === "chchch") {
+        window.location.href = "other.html";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Enter the Password...</h1>
+  <input type="text" id="inputBox" placeholder="Enter a value">
+  <button onclick="checkInput()">Submit</button>
+</body>
+</html>
