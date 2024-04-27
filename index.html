@@ -5,24 +5,10 @@
   <script>
     function checkInput() {
       var userInput = document.getElementById("inputBox").value;
-      var targetValue = generateTargetValue(); // 调用生成目标值的函数
-      if (userInput === targetValue) {
+      var comparisonValue = "chchch";
+      if (userInput === comparisonValue) {
         window.location.href = "other.html";
       }
-    }
-
-    function generateTargetValue() {
-      var targetValue = "";
-      var initialChar = "c";
-      var charCode = initialChar.charCodeAt(0);
-      var increment = 7;
-
-      for (var i = 0; i < 3; i++) {
-        targetValue += String.fromCharCode(charCode);
-        charCode += increment;
-      }
-
-      return targetValue;
     }
   </script>
 </head>
