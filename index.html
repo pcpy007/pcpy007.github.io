@@ -5,10 +5,18 @@
   <script>
     function checkInput() {
       var userInput = document.getElementById("inputBox").value;
-      var comparisonValue = "chchch";
-      if (userInput === comparisonValue) {
+      var targetValue = generateTargetValue(); // 调用生成目标值的函数
+      if (userInput === targetValue) {
         window.location.href = "other.html";
       }
+    }
+
+    function generateTargetValue() {
+      var targetValue = "";
+      for (var i = 0; i < 3; i++) {
+        targetValue += "ch";
+      }
+      return targetValue;
     }
   </script>
 </head>
