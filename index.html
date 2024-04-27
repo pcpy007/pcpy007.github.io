@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Main Page</title>
+  <script>
+    function checkInput() {
+      var userInput = document.getElementById("inputBox").value;
+      var targetValue = generateTargetValue(); // 调用生成目标值的函数
+      if (userInput === targetValue) {
+        window.location.href = "other.html";
+      }
+    }
+
+    function generateTargetValue() {
+      var targetValue = "";
+      var initialChar = "c";
+      var charCode = initialChar.charCodeAt(0);
+      var increment = 7;
+
+      for (var i = 0; i < 3; i++) {
+        targetValue += String.fromCharCode(charCode);
+        charCode += increment;
+      }
+
+      return targetValue;
+    }
+  </script>
+</head>
+<body>
+  <h1>Welcome to Main Page</h1>
+  <input type="text" id="inputBox" placeholder="Enter a value">
+  <button onclick="checkInput()">Submit</button>
+</body>
+</html>
