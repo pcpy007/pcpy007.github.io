@@ -15,7 +15,18 @@
         <embed src="music/audio1.mp3" hidden="true" autostart="true" loop="true">
     </head>
     <body>
-        <bgsound src="music/audio1.mp3" autostart="true"></bgsound>
+
+        <audio id="background-music" loop autoplay>
+            <source src="music/audio1.mp3" type="audio/mpeg">
+            您的浏览器不支持音频元素。
+        </audio>
+    
+        <script>
+            // 确保音乐在页面加载时播放
+            const audio = document.getElementById('background-music');
+            audio.volume = 0.5; // 设置音量（0.0 到 1.0 之间）
+        </script>
+
 <!--        <audio autoplay="true" loop="true" preload="auto">
             <source src="/music/audio1.mp3" type="audio/ogg"></audio>-->
         <div id="mobile" :class="{ 'has-prompt': hasPrompt }">
