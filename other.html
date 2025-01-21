@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=100%, initial-scale=1">
         <title>与PS聊天中</title>
+        <button onclick="playMusic()">播放背景音乐</button>
         <link href="css/main.min.css" rel="stylesheet" type="text/css">
         <link rel="Shortcut Icon" href="favicon.ico"/>
         <link rel="preload" href="img/WechatIMG81.jpg" as="image">
@@ -13,6 +14,12 @@
         <link rel="preload" href="img/WechatIMG87.jpg" as="image">
   <!--         <link rel="preload" href="music/audio1.mp3" as="audio">
         <embed src="music/audio1.mp3" hidden="true" autostart="true" loop="true">-->
+            <script>
+                function playMusic() {
+                    var music = document.getElementById('background-music');
+                    music.play();
+                }
+            </script>
 
     <style>
         button {
@@ -92,14 +99,9 @@
         </script>
 
 <audio id="background-music" src="music/audio1.mp3" loop></audio>
-<button onclick="playMusic()">播放背景音乐</button>
 
-<script>
-    function playMusic() {
-        var music = document.getElementById('background-music');
-        music.play();
-    }
-</script>
+
+
 
 <!--        <audio autoplay="true" loop="true" preload="auto">
             <source src="/music/audio1.mp3" type="audio/ogg"></audio> -->   
