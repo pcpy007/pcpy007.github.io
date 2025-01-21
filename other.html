@@ -21,22 +21,40 @@
                 }
             </script>
 
-    <style>
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh; /* 使按钮垂直居中 */
+                margin: 0;
+            }
+            .button-container {
+                display: flex;
+                justify-content: center; /* 水平居中 */
+                align-items: center; /* 垂直居中 */
+            }
+            button {
+                padding: 20px 40px; /* 增加内边距 */
+                font-size: 24px; /* 增大字体 */
+                cursor: pointer;
+                background-color: #007BFF; /* 可选，设置背景颜色 */
+                color: white; /* 可选，设置字体颜色 */
+                border: none; /* 可选，去掉边框 */
+                border-radius: 5px; /* 可选，设置圆角 */
+            }
+        </style>
     </head>
     <body>
 
+        <div class="button-container">
+            <button onclick="playMusic()">播放背景音乐</button>
+        </div>
         
 
         <div id="mobile" :class="{ 'has-prompt': hasPrompt }">
             <div id="mobile-head">
                 <div id="mobile-head-title">与PS聊天中</div>
-                <button onclick="playMusic()">播放背景音乐</button>
             </div>
             <div id="mobile-body">
                 <div id="mobile-body-bg"></div>
