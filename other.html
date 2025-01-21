@@ -16,12 +16,16 @@
         <embed src="music/audio1.mp3" hidden="true" autostart="true" loop="true">-->
             <script>
                 let flag = 1;
-                function playMusic(value1,value2) {
+                function swtichMusic(value1,value2) {
                     flag = value1;
                     var music2 = document.getElementById('background-music'+value2);
                     music2.pause();
                     var musictoplay = document.getElementById('background-music'+flag);
                     musictoplay.play();
+                }
+                function playMusic() {
+                    var music = document.getElementById('background-music'+flag);
+                    music.play();
                 }
                 function pauseMusic() {
                     var music = document.getElementById('background-music'+flag);
@@ -32,9 +36,9 @@
     <body>
 
         <div class="button-container">
-            <button onclick="playMusic(1,2)">播放音乐</button>
-            <button onclick="playMusic(1,2)">上一首</button>
-            <button onclick="playMusic(2,1)">下一首</button>
+            <button onclick="playMusic()">播放音乐</button>
+            <button onclick="swtichMusic(1,2)">上一首</button>
+            <button onclick="swtichMusic(2,1)">下一首</button>
             <button onclick="pauseMusic()">暂停音乐</button>
         </div>
         
