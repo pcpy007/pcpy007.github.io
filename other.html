@@ -13,6 +13,14 @@
         <link rel="preload" href="img/WechatIMG87.jpg" as="image">
   <!--         <link rel="preload" href="music/audio1.mp3" as="audio">
         <embed src="music/audio1.mp3" hidden="true" autostart="true" loop="true">-->
+
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
     </head>
     <body>
 
@@ -83,7 +91,7 @@
             audio.volume = 0.5; // 设置音量（0.0 到 1.0 之间）
         </script>
 
-<audio id="background-music" src="ymusic/audio1.mp3" loop></audio>
+<audio id="background-music" src="music/audio1.mp3" loop></audio>
 <button onclick="playMusic()">播放背景音乐</button>
 
 <script>
