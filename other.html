@@ -15,32 +15,26 @@
   <!--         <link rel="preload" href="music/audio1.mp3" as="audio">
         <embed src="music/audio1.mp3" hidden="true" autostart="true" loop="true">-->
             <script>
-                function playMusic1() {
-                    var music2 = document.getElementById('background-music2');
+                let flag = 1;
+                function playMusic(value1,value2) {
+                    flag = value1;
+                    var music2 = document.getElementById('background-music'+value2);
                     music2.pause();
-                    var music1 = document.getElementById('background-music1');
-                    music1.play();
-                }
-                function playMusic2() {
-                    var music1 = document.getElementById('background-music1');
-                    music1.pause();
-                    var music2 = document.getElementById('background-music2');
-                    music2.play();
+                    var musictoplay = document.getElementById('background-music'+flag);
+                    musictoplay.play();
                 }
                 function pauseMusic() {
-                    var music1 = document.getElementById('background-music1');
-                    music1.pause();
-                    var music2 = document.getElementById('background-music2');
-                    music2.pause();
+                    var music = document.getElementById('background-music'+flag);
+                    music.pause();
                 }
             </script>
     </head>
     <body>
 
         <div class="button-container">
-            <button onclick="playMusic1()">播放音乐</button>
-            <button onclick="playMusic1()">上一首</button>
-            <button onclick="playMusic2()">下一首</button>
+            <button onclick="playMusic(1,2)">播放音乐</button>
+            <button onclick="playMusic(1,2)">上一首</button>
+            <button onclick="playMusic(2,1)">下一首</button>
             <button onclick="pauseMusic()">暂停音乐</button>
         </div>
         
