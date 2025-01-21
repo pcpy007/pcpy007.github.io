@@ -16,19 +16,7 @@
     </head>
     <body>
 
-        <audio id="background-music" loop autoplay>
-            <source src="music/audio1.mp3" type="audio/mpeg">
-            您的浏览器不支持音频元素。
-        </audio>
-    
-        <script>
-            // 确保音乐在页面加载时播放
-            const audio = document.getElementById('background-music');
-            audio.volume = 0.5; // 设置音量（0.0 到 1.0 之间）
-        </script>
 
-<!--        <audio autoplay="true" loop="true" preload="auto">
-            <source src="/music/audio1.mp3" type="audio/ogg"></audio> -->
         <div id="mobile" :class="{ 'has-prompt': hasPrompt }">
             <div id="mobile-head">
                 <div id="mobile-head-title">与PS聊天中</div>
@@ -82,6 +70,20 @@
             </div>
             <div id="prompt-bg" v-on:click="togglePrompt(false)"></div>
         </div>
+
+        <audio id="background-music" loop autoplay>
+            <source src="music/audio1.mp3" type="audio/mpeg">
+            您的浏览器不支持音频元素。
+        </audio>
+    
+        <script>
+            // 确保音乐在页面加载时播放
+            const audio = document.getElementById('background-music');
+            audio.volume = 0.5; // 设置音量（0.0 到 1.0 之间）
+        </script>
+
+<!--        <audio autoplay="true" loop="true" preload="auto">
+            <source src="/music/audio1.mp3" type="audio/ogg"></audio> -->   
 
         <script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
         <script src="//cdn.bootcss.com/vue/2.2.6/vue.min.js"></script>
