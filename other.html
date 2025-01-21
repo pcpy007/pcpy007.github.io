@@ -19,12 +19,17 @@
                     var music = document.getElementById('background-music');
                     music.play();
                 }
+                function pauseMusic() {
+                    var music = document.getElementById('background-music');
+                    music.pause();
+                }
             </script>
     </head>
     <body>
 
         <div class="button-container">
             <button onclick="playMusic()">播放背景音乐</button>
+            <button onclick="pauseMusic()">暂停音乐</button>
         </div>
         
 
