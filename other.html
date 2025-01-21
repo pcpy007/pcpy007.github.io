@@ -16,6 +16,7 @@
     </head>
     <body>
 
+        
 
         <div id="mobile" :class="{ 'has-prompt': hasPrompt }">
             <div id="mobile-head">
@@ -81,6 +82,16 @@
             const audio = document.getElementById('background-music');
             audio.volume = 0.5; // 设置音量（0.0 到 1.0 之间）
         </script>
+
+<audio id="background-music" src="ymusic/audio1.mp3" loop></audio>
+<button onclick="playMusic()">播放背景音乐</button>
+
+<script>
+    function playMusic() {
+        var music = document.getElementById('background-music');
+        music.play();
+    }
+</script>
 
 <!--        <audio autoplay="true" loop="true" preload="auto">
             <source src="/music/audio1.mp3" type="audio/ogg"></audio> -->   
